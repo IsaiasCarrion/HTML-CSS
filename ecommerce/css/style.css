@@ -5,16 +5,53 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+/* Globales  */
+a{
+    text-decoration: none;
+    color: #000;
+}
 
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header y Navegacion */
 .nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span{
     color: #037bc0;
 }
 
-/* Box Model */
+.contenedor-navegacion{
+    border-top: 1px solid #000;
+}
 
-.sobre-nosotros{
-    background-color: red;
-    width: 200px;
-    padding: 25px;
-    box-sizing: border-box;
+.nav-principal{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Categorias  */
+
+.listado-categorias{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }

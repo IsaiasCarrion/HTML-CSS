@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-    <title>Ecommerce - Home</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <header class="nombre-sitio">
-      <h1>Tienda <span>Muebles</span></h1>
-    </header>
 
-    <nav class="navegacion">
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Ecommerce - Home</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="nombre-sitio">
+    <h1>Tienda <span>Muebles</span></h1>
+  </header>
+
+  <div class="contenedor-navegacion">
+    <nav class="nav-principal contenedor">
       <a href="/index.html">Incio</a>
       <a href="/nosotros.html">Nosotros</a>
       <a href="/tienda.html">Tienda</a>
@@ -21,62 +25,73 @@
       <a href="/galeria.html">Galeria</a>
       <a href="/contacto.html">Contacto</a>
     </nav>
+  </div>
 
-    <section>
-      <h2>Categorias Productos</h2>
-      <div>
-        <img src="/img/categoria1.jpg" alt="Imagen Categoria" />
-        <a href="">Oficina</a>
+  <div class="hero">
 
-        <img src="/img/categoria2.jpg" alt="Imagen Categoria" />
-        <a href="">Hogar</a>
+  </div>
 
-        <img src="/img/categoria3.jpg" alt="Imagen Categoria" />
-        <a href="">Cocina</a>
-      </div>
-    </section>
-
-    <section class="sobre-nosotros">
-      <div>
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quasi
-          accusamus, obcaecati eius veniam excepturi corporis impedit quisquam
-          odio deleniti quo nisi repellat repudiandae. Explicabo accusantium vel
-          eum qui soluta!
-        </p>
-      </div>
-    </section>
-
-    <main>
-      <h2>Nuestros Productos</h2>
-
-      <!-- Listado Productos -->
-      <div>
-        <!-- Producto 1 -->
+  <section class="contenedor">
+    <h2>Categorias Productos</h2>
+    <div class="listado-categorias">
         <div>
-          <img src="/img/producto1.jpg" alt="" />
-          <!-- Info Producto -->
-          <div>
-            <h3>Producto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>$1000</p>
-
-            <a href="">Agregar carrito</a>
-          </div>
+          <img src="/img/categoria1.jpg" alt="Imagen Categoria" />
+          <a href="">Oficina</a>
+        </div>  
+        
+        <div>
+          <img src="/img/categoria2.jpg" alt="Imagen Categoria" />
+          <a href="">Hogar</a>
         </div>
-
-        <!-- Producto 2 -->
+        
         <div>
-          <img src="/img/producto2.jpg" alt="" />
-          <!-- Info Producto -->
-          <div>
-            <h3>Producto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>$1000</p>
+          <img src="/img/categoria3.jpg" alt="Imagen Categoria" />
+          <a href="">Cocina</a>
+        </div>      
+    </div>
+  </section>
 
-            <a href="">Agregar carrito</a>
-          </div>
+  <section class="sobre-nosotros">
+    <div>
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quasi
+        accusamus, obcaecati eius veniam excepturi corporis impedit quisquam
+        odio deleniti quo nisi repellat repudiandae. Explicabo accusantium vel
+        eum qui soluta!
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <h2>Nuestros Productos</h2>
+
+    <!-- Listado Productos -->
+    <div>
+      <!-- Producto 1 -->
+      <div>
+        <img src="/img/producto1.jpg" alt="" />
+        <!-- Info Producto -->
+        <div>
+          <h3>Producto 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <p>$1000</p>
+
+          <a href="">Agregar carrito</a>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div>
+        <img src="/img/producto2.jpg" alt="" />
+        <!-- Info Producto -->
+        <div>
+          <h3>Producto 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <p>$1000</p>
+
+          <a href="">Agregar carrito</a>
+        </div>
 
         <!-- Producto 3 -->
         <div>
@@ -89,73 +104,74 @@
 
             <a href="">Agregar carrito</a>
           </div>
-          
-        <!-- Producto 4 -->
-        <div>
-          <img src="/img/producto4.jpg" alt="" />
-          <!-- Info Producto -->
+
+          <!-- Producto 4 -->
           <div>
-            <h3>Producto 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>$1000</p>
+            <img src="/img/producto4.jpg" alt="" />
+            <!-- Info Producto -->
+            <div>
+              <h3>Producto 4</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              <p>$1000</p>
 
-            <a href="">Agregar carrito</a>
-          </div>
-        
-        <!-- Producto 5 -->
-        <div>
-          <img src="/img/producto5.jpg" alt="" />
-          <!-- Info Producto -->
-          <div>
-            <h3>Producto 5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>$1000</p>
+              <a href="">Agregar carrito</a>
+            </div>
 
-            <a href="">Agregar carrito</a>
-          </div>
-          
-        <!-- Producto 6 -->
-        <div>
-          <img src="/img/producto6.jpg" alt="" />
-          <!-- Info Producto -->
-          <div>
-            <h3>Producto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p>$1000</p>
+            <!-- Producto 5 -->
+            <div>
+              <img src="/img/producto5.jpg" alt="" />
+              <!-- Info Producto -->
+              <div>
+                <h3>Producto 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p>$1000</p>
 
-            <a href="">Agregar carrito</a>
-          </div>
-        </div>
-      </div>
-    </main>
+                <a href="">Agregar carrito</a>
+              </div>
 
-    <footer>
-      <div>
-        <h3>Categorias</h3>
-        <a href="#">Cocina</a>
-        <a href="#">Oficina</a>
-        <a href="#">Jardin</a>
-        <a href="#">Cochera</a>
-        <a href="#">Dormitorios</a>
-      </div>
+              <!-- Producto 6 -->
+              <div>
+                <img src="/img/producto6.jpg" alt="" />
+                <!-- Info Producto -->
+                <div>
+                  <h3>Producto 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <p>$1000</p>
 
-      <div>
-        <h3>Sobre Nostros</h3>
-        <a href="#">Nuestra Historia</a>
-        <a href="#">Mision, Vision y Valores</a>
-        <a href="#">Carreras</a>
-        <a href="#">Politica y Privacidad</a>
-        <a href="#">Terminos del servicio</a>
-      </div>
+                  <a href="">Agregar carrito</a>
+                </div>
+              </div>
+            </div>
+  </main>
 
-      <div>
-        <h3>Soporte</h3>
-        <a href="#">Preguntas Frecuentes</a>
-        <a href="#">Ayuda en Linea</a>
-        <a href="#">Confianza y Seguridad</a>
-      </div>
-      
-      <p>Todos los derechos reservados</p>
-    </footer>
-  </body>
+  <footer>
+    <div>
+      <h3>Categorias</h3>
+      <a href="#">Cocina</a>
+      <a href="#">Oficina</a>
+      <a href="#">Jardin</a>
+      <a href="#">Cochera</a>
+      <a href="#">Dormitorios</a>
+    </div>
+
+    <div>
+      <h3>Sobre Nostros</h3>
+      <a href="#">Nuestra Historia</a>
+      <a href="#">Mision, Vision y Valores</a>
+      <a href="#">Carreras</a>
+      <a href="#">Politica y Privacidad</a>
+      <a href="#">Terminos del servicio</a>
+    </div>
+
+    <div>
+      <h3>Soporte</h3>
+      <a href="#">Preguntas Frecuentes</a>
+      <a href="#">Ayuda en Linea</a>
+      <a href="#">Confianza y Seguridad</a>
+    </div>
+
+    <p>Todos los derechos reservados</p>
+  </footer>
+</body>
+
 </html>
