@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = a 10 px */
 }
 
 *,
@@ -23,7 +24,7 @@ a {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -34,8 +35,8 @@ img {
 
 /* Header y Navegacion */
 .nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -44,11 +45,11 @@ img {
 }
 
 .contenedor-navegacion {
-    border-top: 1px solid #000;
+    border-top: 1rem solid #000;
 }
 
 .nav-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +58,7 @@ img {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 50rem;
 }
 
 /* Categorias  */
@@ -69,18 +70,18 @@ img {
 .categoria a {
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 .categoria a:hover {
     background-color: #037bc0;
     color: #fff;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5rem;
 }
 
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
