@@ -161,3 +161,13 @@ h1, h2 {
 .d-flex-10 .box{
     flex-basis: 33.3%;
 }
+
+/* 11 */
+
+.d-flex-11{
+    display: flex;
+}
+
+.d-flex-11{
+    flex-grow: 1;
+}
