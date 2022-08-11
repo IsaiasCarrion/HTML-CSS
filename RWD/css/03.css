@@ -1,22 +1,18 @@
 .oferta {
-    background-color: #00446e;
+    background-color: #004463;
     padding: 2rem;
     text-align: center;
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
 .precio {
-    font-size: 6rem;
+    font-size: 4rem;
     margin: 0;
 }
 
 @media (max-width: 600px) {
     .oferta {
-        max-width: 30rem;
-    }
-
-    .precio {
-        font-size: 2rem;
+        max-width: 100%;
     }
 }
