@@ -1,0 +1,9 @@
+@media (min-width: 768) {
+    .tres-columnas-flex {
+        display: flex;
+        gap: 2rem;
+    }
+    .columna {
+        flex: 1;
+    }
+}
