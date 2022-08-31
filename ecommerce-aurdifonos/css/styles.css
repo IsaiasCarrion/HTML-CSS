@@ -1,0 +1,17 @@
+:root{
+    /* Paleta de colores  */
+    --primario: #1073BA
+    --secundario: #00da55
+    --gris: #3b3b3b
+    --blanco: #ffffff
+    --negro: #1f1e1e
+    --grisClaro: #e1e1e1
+    
+    /* Fuente */
+    --fuentePrincipal: 'Roboto', sans-serif; 
+    --fuenteSecundario: 'Lato', sans-serif; 
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
