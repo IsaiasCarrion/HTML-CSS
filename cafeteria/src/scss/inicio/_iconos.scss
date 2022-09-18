@@ -1,24 +1,24 @@
 @use 'base/variables' as v;
-@use 'base/_mixins' as m;
-.iconos{
+@use 'base/mixins' as m;
+
+.iconos {
     margin-top: 5rem;
-    .listado-iconos{
-        @include m.tablet{
-            @include m.grid(3, 2);
+    .listado-iconos {
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
         }
 
-        li{
-            img{
+        li {
+            img {
                 margin: 0 auto;
-                width: 15rem;
+                width: 12rem;
             }
-            p{
-                font-family: v.$fuente_cursiva;
+            p {
+                font-family: v.$fuenteCursiva;
                 font-size: 3.2rem;
                 color: v.$primario;
             }
         }
-
         
     }
 }

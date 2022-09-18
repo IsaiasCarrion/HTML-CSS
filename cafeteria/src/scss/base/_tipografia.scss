@@ -1,6 +1,6 @@
 @use 'variables' as v;
 h1,h2,h3{
-    font-family: v.$fuente_principal;
+    font-family: v.$fuentePrincipal;
     margin: 0 0 v.$separacion 0;
     text-transform: uppercase;
     text-align: center;
@@ -41,6 +41,7 @@ h2{
         display: none;
     }
 }
+
 h3{
     font-size: 3.2rem;
 }
