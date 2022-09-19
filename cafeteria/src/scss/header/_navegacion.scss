@@ -1,8 +1,7 @@
-@use 'base/mixins' as m;
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
-
-.nav-principal{
+.nav-principal {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
@@ -12,7 +11,7 @@
         margin-top: 0;
     }
 
-    a{
+    a {
         text-align: center;
         color: v.$blanco;
         font-size: 2rem;
@@ -23,11 +22,11 @@
             margin-bottom: 0;
         }
 
-        &:hover{
+        &:hover {
             color: v.$secundario;
         }
 
-        &.activo{
+        &.activo {
             color: v.$secundario;
         }
     }
