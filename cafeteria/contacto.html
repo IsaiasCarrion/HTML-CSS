@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header header-nosotros">
+  <header class="header header-contacto">
     <div class="contenido-header contenedor">
       <div class="barra">
         <div class="logo">
@@ -22,31 +22,57 @@
         </div>
         <nav class="nav-principal">
           <a href="index.html">Inicio</a>
-          <a class="activo" href="nosotros.html">Nosotros</a>
+          <a href="nosotros.html">Nosotros</a>
           <a href="proceso.html">Proceso</a>
           <a href="menu.html">Menu</a>
           <a href="galeria.html">Galeria</a>
-          <a href="contacto.html">Contacto</a>
+          <a class="activo" href="contacto.html">Contacto</a>
         </nav>
       </div>
       <div class="texto-header">
-        <h1>Una nueva experiencia cada dia</h1>
+        <h1>Mejores Granos Mejor Cafe</h1>
       </div>
     </div>
   </header>
 
   <main class="contedor contenido-principal">
-   <h2><span>Conoce mas</span>sobre nosotros</h2>
-    <div class="contenido-nosotros">
-        <div class="imagen">
-            <img src="/build/img/nosotros_sidebar.jpg" alt="">
+   <h2><span>Reserva tu</span>Mesa</h2>
+   <div class="contenido-contacto">
+    <form class="formulario">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu Nombre">
         </div>
-        <div class="texto">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere labore repellendus quod accusantium sit inventore laudantium et fugiat excepturi, incidunt, enim quisquam expedita voluptatem odit voluptatum numquam quas ipsum nesciunt in praesentium animi. Molestias eligendi necessitatibus repellendus ducimus inventore animi sapiente nostrum. Iste provident sequi eaque vel corporis voluptate.</p>
-            <blockquote>Excelente Sabor</blockquote>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis laboriosam ipsa architecto quas, nemo assumenda dolorum placeat. Neque, ut inventore dolorem ducimus autem molestiae delectus sint, fugit laborum dolorum eaque officiis tempore aperiam. Sequi dolor beatae, ad pariatur repudiandae, fuga explicabo corporis quibusdam, eaque ex officia nulla qui magnam?</p>
+        <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Tu Email">
         </div>
-    </div>
+        <div class="campo">
+            <label for="nombre">Numero de Personas</label>
+            <select name="" id="">
+                <option value="" disabled selected>--Selecione--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="mas">+4</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora">
+        </div>
+        <div class="campo">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+        </div>
+        <div>
+            <div class="campo">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </form>
+   </div>
   </main>
 
   <footer class="footer">

@@ -1,4 +1,4 @@
-const { src, dest, watch, series, parallel } = require('gulp');
+const { src, dest, watch, series } = require('gulp');
 
 // CSS y SASS
 const sass = require('gulp-sass')(require('sass'));
@@ -11,7 +11,6 @@ const cssnano = require('cssnano');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
-const browserSync = require('browser-sync');
 
 function css( done ) {
     src('src/scss/app.scss')
@@ -26,7 +25,7 @@ function css( done ) {
 
 function imagenes() {
     return src('src/img/**/*')
-        .pipe( imagemin({ optimizationLevel: 3 }))
+        .pipe( imagemin({ optimizationLevel: 3 }) )
         .pipe( dest('build/img') )
 }
 
@@ -52,12 +51,10 @@ function dev() {
     watch( 'src/img/**/*', imagenes );
 }
 
+
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.default = series( imagenes, versionWebp, versionAvif, css, dev );
-
-// series - Se inicia una tarea, y hasta que finaliza, inicia la siguiente
-// parallel - Todas inician al mismo tiempo
+exports.default = series( imagenes, versionWebp, versionAvif, css, dev  );
