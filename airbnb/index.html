@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBNB - BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra__logo">
+                <p class="barra__nombre">Viaje</p>
+            </div>
+
+            <nav class="barra__navegacion">
+                <a class="barra__link" href="#">Lugares para hospedarte</a>
+                <a class="barra__link" href="#">Experiencias</a>
+                <a class="barra__link" href="#">Experiencias en línea</a>
+            </nav>
+
+            <nav class="barra__login">
+                <a class="barra__link" href="#">Hazte Anfitrión</a>
+            </nav>
+        </div>
+
+        <form class="formulario contenedor">
+            <div class="formulario__campo">
+                <label class="formulario__label" for="ubicacion">Ubicación</label>
+                <input type="text" class="formulario__input" id="ubicacion" placeholder="¿A donde viajas">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="llegada">Llegada</label>
+                <input type="date" class="formulario__input" id="llegada">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="salida">Salida</label>
+                <input type="date" class="formulario__input" id="salida">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="huespedes">Huéspedes</label>
+                <input type="number" class="formulario__input" id="huespedes" placeholder="¿Cuántos?">
+            </div>
+
+            <div class="formulario__campo">
+                <input type="submit" class="formulario__submit" value="Buscar">
+            </div>
+        </form>
+
+        <div class="header__busqueda contenedor">
+            <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+            <a href="#" class="header__busqueda-boton">Búsqueda Flexible</a>
+        </div>
+
+    </header>
+
+    <section class="destinos contenedor seccion">
+        <h2 class="destinos__heading">Descubre Alojamientos Populares</h2>
+
+        <ul class="destinos__grid">
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_1.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">New York</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_2.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">Paris</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_3.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">San Francisco</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_4.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">Egipto</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_5.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">Londres</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_6.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">Italia</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_7.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">India</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+            <li class="destino">
+                <div class="destino__imagen">
+                    <img src="/build/img/icono_destino_8.png" alt="destino imagen">
+                </div>
+                <div class="destino__informacion">
+                    <h3 class="destino__nombre">Grecia</h3>
+                    <p class="destino__distancia">4 hs en Avion</p>
+                </div>
+            </li>
+            <!-- Fin Li -->
+        </ul>
+    </section>
+
+</body>
+
+</html>

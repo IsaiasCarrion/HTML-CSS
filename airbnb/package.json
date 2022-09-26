@@ -1,0 +1,30 @@
+{
+  "name": "compilar-archivos-sass",
+  "version": "1.0.0",
+  "description": "Aprendiendo a compilar archivos sass con gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isaias Carrion",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.9",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.13",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.0",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.9"
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ]
+}
