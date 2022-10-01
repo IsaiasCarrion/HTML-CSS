@@ -11,16 +11,23 @@
         }
 
         @include m.desktop { 
-            @include m.grid (4, 2rem);
+            @include m.grid (4, 2rem); 
         }
     }
 }
 
 .destino{
     display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
 
     &__imagen{
-        width: 14rem;
-        height: 14rem;
+        width: 14rem;            
+    }
+
+    &__nombre, 
+    &__distancia {
+        margin: 0;
     }
 }
