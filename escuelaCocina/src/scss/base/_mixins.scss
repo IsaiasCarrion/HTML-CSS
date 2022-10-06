@@ -6,15 +6,18 @@
         @content;
     }
 }
-
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
     }
 }
-  
 @mixin desktop {
     @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin desktopXL {
+    @media (min-width: v.$desktopxl) {
         @content;
     }
 }
@@ -22,23 +25,23 @@
 
 @mixin boton($bgColor, $colorTexto) {
     background-color: $bgColor;
-    padding: 2rem 2rem;
+    padding: 1.5rem 4rem;
     color: $colorTexto;
     margin-top: 2rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
     display: inline-block;
     font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: .3s;
     text-align: center;
-    text-transform: uppercase;
-    transition: background-color;
-    transition-duration: 300ms;
 
     @include tablet {
         width: auto;
     }
     &:hover {
-        background-color: darken($bgColor, 10%);
+        background-color: darken( $bgColor, 10% );
     }
 }
 
@@ -48,26 +51,22 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin headingCursiva{
-    text-align: center;
-    color: v.$secundario;
-    font-family: v.$fuenteCursiva;
-    line-height: .8;
-    font-weight: 500;
-    text-transform: lowercase;
-    font-size: 4rem;
-
-    span{
-        color: v.$negro;
-        display: block;
-        text-transform: uppercase;
-        font-family: v.$fuentePrincipal;
-    }
+@mixin bgImage($url) {
+    background-image: url( $url );
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 @mixin heading {
-    text-transform: uppercase;
     text-align: center;
-    font-weight: 400;
-    font-size: 4rem;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 10rem;
+        margin: 0 auto;
+        background-image: url(../img/separador.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
